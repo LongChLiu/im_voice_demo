@@ -1,0 +1,171 @@
+name: im_voice_demo
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+  flutter_sound: ^8.3.9
+  audioplayer: ^0.8.1
+  extended_text_field: ^8.0.0
+  permission_handler: ^8.1.4+2
+  path_provider: ^2.0.2
+  intl: ^0.17.0
+  shared_preferences: ^2.0.6
+  dim: ^0.2.8
+  connectivity: ^3.0.6
+  toast: ^0.1.5
+  sqflite: ^2.0.0+3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/images/bsc.webp
+    - assets/images/bar_close.png
+    - assets/images/tabbar_contacts_c.webp
+    - assets/images/tabbar_contacts_s.webp
+    - assets/images/tabbar_discover_c.webp
+    - assets/images/tabbar_discover_s.webp
+    - assets/images/tabbar_chat_c.webp
+    - assets/images/tabbar_chat_s.webp
+    - assets/images/tabbar_me_c.webp
+    - assets/images/tabbar_me_s.webp
+    - assets/images/def_avatar.png
+    - assets/images/search_black.webp
+    - assets/images/search_white.png
+    - assets/images/Contact_Female.webp
+    - assets/images/Contact_Male.webp
+    - assets/images/right_more.png
+    - assets/images/favorite.webp
+    - assets/images/contacts_add_newmessage.png
+    - assets/images/add_addressicon.png
+    - assets/images/ic_delete.webp
+    - assets/images/ic_right_arrow_black.webp
+    - assets/images/ic_right_arrow_grey.webp
+    - assets/images/ic_add_friend.webp
+    - assets/images/ic_no_data.webp
+
+    - assets/images/login/select_avatar.webp
+    - assets/images/login/ic_select_have.webp
+    - assets/images/login/ic_select_have_grey.webp
+    - assets/images/login/ic_select_no.png
+
+    - assets/images/chat/ic_Emotion.webp
+    - assets/images/chat/ic_Keyboard.webp
+    - assets/images/chat/ic_details_add.png
+    - assets/images/chat/ic_voice.webp
+    - assets/images/chat/ic_chat_more.webp
+    - assets/images/chat/ic_chat_voice.webp
+    - assets/images/chat/ic_details_camera.webp
+    - assets/images/chat/ic_details_card.webp
+    - assets/images/chat/ic_details_favorite.webp
+    - assets/images/chat/ic_details_file.webp
+    - assets/images/chat/ic_details_localtion.webp
+    - assets/images/chat/ic_details_media.webp
+    - assets/images/chat/ic_details_photo.webp
+    - assets/images/chat/ic_details_red.webp
+    - assets/images/chat/ic_details_transfer.webp
+    - assets/images/chat/ic_details_video.webp
+    - assets/images/chat/voice_volume_1.webp
+    - assets/images/chat/voice_volume_2.webp
+    - assets/images/chat/voice_volume_3.webp
+    - assets/images/chat/voice_volume_4.webp
+    - assets/images/chat/voice_volume_5.webp
+    - assets/images/chat/voice_volume_6.webp
+    - assets/images/chat/voice_volume_7.webp
+    - assets/images/chat/sound_left_0.webp
+    - assets/images/chat/sound_left_1.webp
+    - assets/images/chat/sound_left_2.webp
+    - assets/images/chat/sound_left_3.webp
+    - assets/images/chat/sound_right_0.png
+    - assets/images/chat/sound_right_1.webp
+    - assets/images/chat/sound_right_2.webp
+    - assets/images/chat/sound_right_3.png
+    - assets/images/chat/icon_sight_close.png
+    - assets/images/chat/flip_camera_icon_nor.webp
+
+    - assets/images/mine/ic_small_code.png
+    - assets/images/mine/ic_wallet.webp
+    - assets/images/mine/ic_card_package.png
+    - assets/images/mine/ic_emoji.png
+    - assets/images/mine/ic_pay.png
+    - assets/images/mine/ic_setting.png
+
+    - assets/images/contact/ic_contacts_details.png
+    - assets/images/contact/ic_no_public.webp
+    - assets/images/contact/ic_tag.webp
+    - assets/images/contact/ic_group.webp
+    - assets/images/contact/ic_new_friend.webp
+    - assets/images/contact/ic_video.png
+    - assets/images/contact/ic_voice.png
+    - assets/images/contact/ic_offical.webp
+    - assets/images/contact/ic_reda.webp
+    - assets/images/contact/ic_scanqr.webp
+    - assets/images/contact/ic_search_wework.webp
+    - assets/images/contact/ic_contact_add.webp
+
+    - assets/images/discover/ff_Icon_album.webp
+    - assets/images/discover/ff_Icon_shake.webp
+    - assets/images/discover/ff_Icon_bottle.webp
+    - assets/images/discover/ff_Icon_browse.webp
+    - assets/images/discover/ff_Icon_nearby.webp
+    - assets/images/discover/ff_Icon_qr_code.webp
+    - assets/images/discover/ff_Icon_search.webp
+    - assets/images/discover/game_center_h5.webp
+    - assets/images/discover/mini_program.webp
+    - assets/images/emoji/
+    - assets/images/group/
+
+    - assets/data/contacts.json
+    - assets/data/friends.json
